@@ -28,11 +28,11 @@ from io import BytesIO
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 
-import chart_studio.plotly as py
-import plotly.graph_objs as go
-from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+#import chart_studio.plotly as py
+#import plotly.graph_objs as go
+#from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
-init_notebook_mode(connected=True)
+#init_notebook_mode(connected=True)
 
 def main():
     """NLP App with Streamlit"""
@@ -86,34 +86,13 @@ def main():
   
         
         pca = PCA(n_components=50)
-        y = pca.fit_transform(x)
+        #y = pca.fit_transform(x)
         
 
         
-        y = TSNE(n_components=2).fit_transform(y)
+        #y = TSNE(n_components=2).fit_transform(y)
         
-        data = [
-            go.Scatter(
-                x=[i[0] for i in y],
-                y=[i[1] for i in y],
-                mode='markers',
-                text=[i for i in sentences],
-            marker=dict(
-                size=16,
-                color = [len(i) for i in sentences], #set color equal to a variable
-                opacity= 0.8,
-                colorscale='viridis',
-                showscale=False
-            )
-            )
-        ]
-        layout = go.Layout()
-        layout = dict(
-                      yaxis = dict(zeroline = False),
-                      xaxis = dict(zeroline = False)
-                     )
-        fig = go.Figure(data=data, layout=layout)
-        #fig.update_layout(width=900,height=600)
+        
         
         
         #search_string = "soil contamination"
@@ -167,7 +146,6 @@ def main():
         st.markdown(get_table_download_link(output1), unsafe_allow_html=True)
         
         st.success("Rather than a dictionary of words and their corresponding vectors, ELMo analyses words within the context that they are used. It is also character-based, allowing the model to form representations of out-of-vocabulary words.")
-        st.plotly_chart(fig)
 
         
 if __name__ == "__main__":
