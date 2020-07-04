@@ -1,9 +1,9 @@
 streamlit
-tensorflow==2.0.0-beta1
-tensorflow_hub
 spacy
 chart_studio
 setuptools>=41.0.0
 sklearn
 xlrd >= 1.0.0 
-
+tensorflow==2.0.0a0
+tensorflowjs==1.2.6
+tensorflow-hub==0.5.0
