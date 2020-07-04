@@ -5,4 +5,4 @@ spacy
 chart_studio
 setuptools>=41.0.0
 sklearn
-nlp = en_core_web_md.load()
+
