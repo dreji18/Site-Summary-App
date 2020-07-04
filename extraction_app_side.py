@@ -20,7 +20,7 @@ import re
 #nlp = spacy.load('en_core_web_sm')
 import logging
 logging.getLogger('tensorflow').disabled = True #OPTIONAL - to disable outputs from Tensorflow
-#from sklearn.decomposition import PCA
+from sklearn.decomposition import PCA
 from sklearn.metrics.pairwise import cosine_similarity
 import base64
 from io import BytesIO
@@ -86,11 +86,11 @@ def main():
   
         
         pca = PCA(n_components=50)
-        #y = pca.fit_transform(x)
+        y = pca.fit_transform(x)
         
 
         
-        #y = TSNE(n_components=2).fit_transform(y)
+        y = TSNE(n_components=2).fit_transform(y)
         
         
         
