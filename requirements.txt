@@ -3,3 +3,4 @@ tensorflow
 tensorflow_hub
 spacy
 chart_studio
+setuptools>=41.0.0
