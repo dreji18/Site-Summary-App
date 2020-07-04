@@ -16,7 +16,7 @@ from sklearn import preprocessing
 import spacy
 from spacy.lang.en import English
 from spacy import displacy
-nlp = spacy.load('en_core_web_md')
+nlp = spacy.load('en_core_web_sm')
 import logging
 logging.getLogger('tensorflow').disabled = True #OPTIONAL - to disable outputs from Tensorflow
 #from sklearn.decomposition import PCA
