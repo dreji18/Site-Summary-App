@@ -5,5 +5,5 @@ spacy
 chart_studio
 setuptools>=41.0.0
 sklearn
-
+xlrd >= 1.0.0 
 
