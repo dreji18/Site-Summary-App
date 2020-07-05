@@ -4,5 +4,5 @@ chart_studio
 setuptools>=41.0.0
 sklearn
 xlrd >= 1.0.0 
-tensorflow ==1.15
+tensorflow ==1.18
 tensorflow-hub
