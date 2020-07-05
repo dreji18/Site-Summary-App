@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 #import tensorflow as tf
 import tensorflow.compat.v1 as tf
-tf.disable_eager_execution()
+tf.compat.v1.disable_eager_execution()
 import tensorflow_hub as hub
 from sklearn import preprocessing
 import re
