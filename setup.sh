@@ -6,7 +6,6 @@ email = \"your-email@domain.com\"\n\
 echo "\
 [server]\n\
 headless = true\n\
-
-serverAddress ="https://site-summary.herokuapp.com/"\n\
+enableCORS=false\n\
 port = $PORT\n\
 " > ~/.streamlit/config.toml
