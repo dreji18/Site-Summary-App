@@ -33,7 +33,6 @@ from sklearn.decomposition import PCA
 import chart_studio.plotly as py
 import plotly.graph_objs as go
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
-st.set_option('deprecation.showfileUploaderEncoding', False)
 init_notebook_mode(connected=True)
 
 def main():
