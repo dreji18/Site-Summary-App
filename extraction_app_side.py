@@ -11,15 +11,10 @@ import pandas as pd
 import os
 import numpy as np
 import pandas as pd
-#import tensorflow as tf
 import tensorflow as tf
 import tensorflow_hub as hub
 from sklearn import preprocessing
 import re
-#import spacy
-#from spacy.lang.en import English
-#from spacy import displacy
-#nlp = spacy.load('en_core_web_sm')
 import logging
 logging.getLogger('tensorflow').disabled = True #OPTIONAL - to disable outputs from Tensorflow
 from sklearn.decomposition import PCA
