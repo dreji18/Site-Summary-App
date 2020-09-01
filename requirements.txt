@@ -1,5 +1,4 @@
 streamlit==0.60.0
-spacy
 chart_studio
 setuptools>=41.0.0
 sklearn
