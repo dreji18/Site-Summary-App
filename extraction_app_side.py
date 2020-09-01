@@ -66,7 +66,7 @@ def main():
         run_button = st.sidebar.button(label='Run Extraction')
         
         # create sentence embeddings
-        url = "https://tfhub.dev/google/elmo/2"
+        url = "https://tfhub.dev/google/elmo/1"
         embed = hub.Module(url)
         
         text = ' '.join(df.Sentences)
