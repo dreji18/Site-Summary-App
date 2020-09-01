@@ -55,7 +55,7 @@ def main():
     if uploaded_file:
         df = pd.read_excel(uploaded_file)
         
-        search_string = st.sidebar.text_input("", "your search word...")
+        search_string = st.sidebar.text_input("", "contamination")
         
         gcr_config = st.sidebar.slider(label="choose the no of Sentences",
                            min_value=1,
