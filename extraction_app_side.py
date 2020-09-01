@@ -6,7 +6,7 @@ Created on Fri Jul  3 10:45:41 2020
 """
 
 import streamlit as st
-from streamlit.server.Server import Server
+
 import pandas as pd
 import os
 import numpy as np
