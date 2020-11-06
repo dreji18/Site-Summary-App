@@ -1,4 +1,4 @@
-tensorflow== 1.13.1
+tensorflow== 1.15.4
 tensorflow_hub == 0.7.0
 sklearn
 chart_studio
